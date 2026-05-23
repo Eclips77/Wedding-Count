@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Countdown</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Playfair Display (Serif) and Montserrat (Sans-Serif) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="particles" id="particles"></div>
+
+    <main class="container">
+        <div class="glass-panel">
+            <header class="header">
+                <h2 class="pre-title">The Wedding Of</h2>
+                <h1 class="title">Evelyn & James</h1>
+                <p class="date-text">August 17, 2026</p>
+            </header>
+
+            <div class="timer-container" id="timer-container">
+                <!-- Mode A: Minimalist (Days Only) -->
+                <div class="timer-mode mode-a active" id="mode-a">
+                    <div class="time-block">
+                        <span class="number" id="days-only">000</span>
+                        <span class="label">Days to go</span>
+                    </div>
+                </div>
+
+                <!-- Mode B: Detailed (Days, Hours, Minutes, Seconds) -->
+                <div class="timer-mode mode-b" id="mode-b">
+                    <div class="time-block">
+                        <span class="number" id="days">000</span>
+                        <span class="label">Days</span>
+                    </div>
+                    <div class="separator">:</div>
+                    <div class="time-block">
+                        <span class="number" id="hours">00</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <div class="separator">:</div>
+                    <div class="time-block">
+                        <span class="number" id="minutes">00</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <div class="separator">:</div>
+                    <div class="time-block">
+                        <span class="number" id="seconds">00</span>
+                        <span class="label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle-container">
+                <span class="toggle-label">Minimal</span>
+                <label class="switch">
+                    <input type="checkbox" id="mode-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <span class="toggle-label">Detailed</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
